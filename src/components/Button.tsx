@@ -7,7 +7,8 @@ const classes = `
 	border border-amber-300 rounded
 	bg-amber-300/0
 	hover:bg-amber-300/10
-	transition-colors ease-in-out
+	transition-colors duration-300 ease-[cubic-bezier(0.25,-0.75,0.75,1.75)]
+	active:bg-amber-300/25 active:duration-100
 `
 
 type Props = {} // Button takes no additional props (just the underlying html element's props)
