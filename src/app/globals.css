@@ -5,3 +5,106 @@
 /* Fix for browser support of the slant axis (Inter) */
 * { font-variation-settings: 'slnt' 0; }
 .italic { font-variation-settings: 'slnt' 10; }
+
+@layer components {
+	.animate-flicker {
+		animation-duration: 3s;
+		animation-name: flicker;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+
+/* timings yoinked from https://gist.github.com/allex/66906e69d871eda6e3a0fd8dc0dec2c0 */
+@keyframes flicker {
+	from {
+		filter: brightness(1);
+	}
+	4% {
+		filter: brightness(1);
+	}
+	6% {
+		filter: brightness(0.95);
+	}
+	8% {
+		filter: brightness(1.05);
+	}
+	10% {
+		filter: brightness(0.95);
+	}
+	11% {
+		filter: brightness(1);
+	}
+	12% {
+		filter: brightness(1.15);
+	}
+	14% {
+		filter: brightness(1.05);
+	}
+	16% {
+		filter: brightness(1.2);
+	}
+	17% {
+		filter: brightness(1.05);
+	}
+	19% {
+		filter: brightness(1);
+	}
+	20% {
+		filter: brightness(1);
+	}
+	24% {
+		filter: brightness(1);
+	}
+	26% {
+		filter: brightness(1.19);
+	}
+	28% {
+		filter: brightness(1);
+	}
+	38% {
+		filter: brightness(0.95);
+	}
+	40% {
+		filter: brightness(1);
+	}
+	42% {
+		filter: brightness(1.1);
+	}
+	44% {
+		filter: brightness(1);
+	}
+	46% {
+		filter: brightness(1);
+	}
+	56% {
+		filter: brightness(1);
+	}
+	58% {
+		filter: brightness(1.25);
+	}
+	60% {
+		filter: brightness(1);
+	}
+	68% {
+		filter: brightness(1);
+	}
+	70% {
+		filter: brightness(1.1);
+	}
+	72% {
+		filter: brightness(1);
+	}
+	93% {
+		filter: brightness(1);
+	}
+	95% {
+		filter: brightness(1.1);
+	}
+	97% {
+		filter: brightness(1);
+	}
+	to {
+		filter: brightness(1);
+	}
+}
