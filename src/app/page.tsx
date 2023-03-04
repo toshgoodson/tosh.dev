@@ -54,7 +54,7 @@ export default function Home() {
 			</div>
 
 			<div className="text-center text-sm leading-relaxed mb-8">
-				<div><Link className="text-inherit border-stone-400/0 hover:border-stone-400/50" href=""><span className="font-emoji">🛠️</span> Built by Tosh Goodson <span className="font-emoji">🛠️</span></Link></div>
+				<div><Link className="text-inherit border-stone-400/0 hover:border-stone-400/50" href="https://github.com/toshgoodson/tosh.dev" target="_blank"><span className="font-emoji">🛠️</span> Built by Tosh Goodson <span className="font-emoji">🛠️</span></Link></div>
 				<div>Design inspired by <Link href="https://brittanychiang.com/" target="_blank">brittanychiang.com</Link></div>
 			</div>
 		</main>
