@@ -30,10 +30,19 @@ const inter = localFont({
 	variable: '--font-inter',
 })
 
+const notoEmoji = localFont({
+	src: '../fonts/NotoEmoji-VariableFont_wght.woff2',
+	style: 'normal',
+	weight: '300 700',
+	display: 'swap',
+	adjustFontFallback: false,
+	variable: '--font-noto-emoji',
+})
+
 
 export default function RootLayout({children}: PropsWithChildren) {
 	return (
-		<html lang="en" className={`${dungeonChunk.variable} ${robotoMono.variable} ${inter.variable}`}>
+		<html lang="en" className={`${dungeonChunk.variable} ${robotoMono.variable} ${inter.variable} ${notoEmoji.variable}`}>
 			<head />
 			<body className="bg-stone-900 text-stone-400 rfs:text-xl overflow-auto">
 				<Nav/>

@@ -11,6 +11,7 @@ module.exports = {
 				'sans': ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
 				'mono': ['var(--font-roboto-mono)', ...defaultTheme.fontFamily.mono],
 				'pixel': ['var(--font-dungeon-chunk)', ...defaultTheme.fontFamily.sans],
+				'emoji': ['var(--font-noto-emoji)', ...defaultTheme.fontFamily.sans],
 			}
 		},
 	},
