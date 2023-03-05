@@ -14,7 +14,7 @@ const classes = `
 
 type Props = {} // Button takes no additional props (just the underlying html element's props)
 
-type AllowedElementTypes = 'a' | 'button' | typeof Link
+type AllowedElementTypes = 'a' | 'button' | 'label' | typeof Link
 
 type ButtonProps<C extends React.ElementType> = PolymorphicComponentPropsWithRef<C, Props>
 

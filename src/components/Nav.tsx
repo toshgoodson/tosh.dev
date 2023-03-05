@@ -32,7 +32,7 @@ export const Nav: FC = () => {
 						<span className={`${logoTransition} delay-[175ms] group-hover:delay-[4400ms]                          group-hover:animate-flicker group-hover:[animation-delay:4400ms]`}>v</span>
 					</Link>
 					<div className="flex-grow"></div>
-					<div className="mr-3">
+					<div className="hidden md:block mr-3">
 						<NavLink href="#about">About</NavLink>
 						<NavLink href="#experience">Experience</NavLink>
 						{/* <NavLink href="#projects">Projects</NavLink> */}
@@ -40,6 +40,7 @@ export const Nav: FC = () => {
 					</div>
 
 					<Button as={Link} className="text-base px-3 py-1.5" href="https://github.com/toshgoodson/resume/releases/latest/download/Toshiro_Goodson_resume.pdf" download="false" type="application/pdf">Résumé</Button>
+					<Button as="label" className="!text-stone-200 !bg-transparent px-1 py-0 border-0 font-mono text-4xl ml-4 md:hidden">≡</Button>
 				</div>
 			</div>
 			<div className="h-4 bg-gradient-to-b from-black/20 to-transparent sticky top-16 z-30"></div>

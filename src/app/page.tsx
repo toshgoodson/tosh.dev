@@ -9,7 +9,7 @@ const SectionHeader: FC<PropsWithChildren<{id: string, center?: boolean}>> = ({i
 	return (
 		<div id={id} className="flex items-center gap-4 mb-8">
 			{isCenter && <hr className="border-t border-stone-700 grow"/>}
-			<h2 className="text-3xl text-stone-200 font-semibold"><span className="text-rose-500 font-light font-mono">#</span> {children}</h2>
+			<h2 className="rfs:text-3xl text-stone-200 font-semibold"><span className="text-rose-500 font-light font-mono">#</span> {children}</h2>
 			<hr className="border-t border-stone-700 grow"/>
 		</div>
 	)
@@ -31,49 +31,51 @@ export default function Home() {
 				<h2 className="md:rfs:text-[80px] rfs:text-[60px] font-extrabold leading-tight mb-4">Coding is what I love.</h2>
 				<div className="md:max-w-[70%] leading-relaxed">I&apos;m a full stack software engineer focused on building robust and performant web apps. Presently, I&apos;m working on e&#8209;commerce shopping experiences at <Link href="https://benefytt.com/" target="_blank">Benefytt.com</Link>.</div>
 			</div>
-			<div className="grid grid-cols-12 gap-12 mb-52">
-				<div className="col-span-8">
+
+			<div className="grid grid-cols-12 md:gap-12 mb-52">
+				<div className="col-span-full md:col-span-8">
 					<SectionHeader id="about">About Me</SectionHeader>
 				</div>
-				<div className="col-span-8">
+				<div className="col-span-full md:col-span-8">
 					<p className="mb-6">Hi there! My name is Toshiro, but you can call me Tosh. I specialize in building web applications from start to finish, and I&apos;m passionate about creating solutions that are both user-friendly and technically robust. </p>
 				
 					<p className="mb-6">Blah Blah</p>
 				
 					<p className="mb-6">Foob</p>
 				</div>
-				<div className="col-span-4 relative">
-					<Image className={photoStyle} src="/tosh.webp" alt="Headshot of Tosh Goodson" width={200} height={200}/>
+				<div className="col-span-full md:col-span-4">
+					<div className="max-w-xs md:max-w-none relative m-auto">
+						<Image className={photoStyle} src="/tosh.webp" alt="Headshot of Tosh Goodson" width={200} height={200}/>
+					</div>
 				</div>
 			</div>
 			
 			<div className="mb-72">
-				<div className="grid grid-cols-12 gap-12">
-					<div className="col-span-8 col-start-5">
+				<div className="grid grid-cols-12 gap-y-8 md:gap-12">
+					<div className="col-span-12 md:col-span-8 md:col-start-5">
 						<SectionHeader id="experience">Experience</SectionHeader>
 					</div>
-					<div className="col-span-4">
+					<div className="col-span-full md:col-span-4">
 						<div className="grid grid-cols-12 gap-4">
-							<div className="col-span-6 relative">
+							<div className="col-span-3 md:col-span-6 relative">
 								<Image className={photoStyle} src="/healthpocket-benefytt.svg" alt="Healthpocket + Benefytt logos" width={200} height={200}/>
 							</div>
-							<div className="col-span-6 relative">
+							<div className="col-span-3 md:col-span-6 relative">
 								<Image className={photoStyle} src="/prioritysales.svg" alt="PrioritySales logo" width={200} height={200}/>
 							</div>
-							<div className="col-span-6 relative">
+							<div className="col-span-3 md:col-span-6 relative">
 								<Image className={photoStyle} src="/stripes39.svg" alt="Stripes39 logo (circa 2011)" width={200} height={200}/>
 							</div>
-							<div className="col-span-6 relative">
+							<div className="col-span-3 md:col-span-6 relative">
 								<Image className={photoStyle} src="/job-filler.svg" alt="" width={200} height={200}/>
 							</div>
 						</div>
 					</div>
 					<div className="col-span-8">
-						<p className="mb-6">Take a look at my resume for my job history.</p>
+						<p className="mb-6">Take a look at my résumé for my job history.</p>
 						<Button as={Link} href="">View Résumé</Button>
 					</div>
 				</div>
-				
 			</div>
 
 			{/* <div className="mb-52">
@@ -83,7 +85,7 @@ export default function Home() {
 			<div className="mb-52">
 				<SectionHeader id="contact" center>Contact</SectionHeader>
 				<div className="grid grid-cols-12">
-					<div className="col-span-8 col-start-3">
+					<div className="col-span-12 md:col-span-8 md:col-start-3">
 						<p className="text-center mb-6">I’m currently looking for new opportunities!</p>
 						<p className="text-center mb-6">If you have a senior/lead full stack, front end, or back end position, throw it my way! I&apos;m down to chat about it.</p>
 						<div className="text-center">
