@@ -9,9 +9,9 @@ const logoTransition = `
 
 const NavLink: FC<PropsWithChildren<{href: string}>> = ({href, children}) => {
 	return (
-		<Link href={href} className="text-base font-light font-mono px-3 py-1.5 group">
+		<a href={href} className="text-base font-light font-mono px-3 py-1.5 group">
 			<span className=" text-rose-500 tracking-widest" aria-hidden>#</span><span className="group-hover:text-stone-100 transition-colors duration-300 ease-[cubic-bezier(0.25,-0.75,0.75,1.75)]">{children}</span>
-		</Link>
+		</a>
 	)
 }
 
@@ -35,11 +35,11 @@ export const Nav: FC = () => {
 					<div className="mr-3">
 						<NavLink href="#about">About</NavLink>
 						<NavLink href="#experience">Experience</NavLink>
-						<NavLink href="#projects">Projects</NavLink>
+						{/* <NavLink href="#projects">Projects</NavLink> */}
 						<NavLink href="#contact">Contact</NavLink>
 					</div>
 
-					<Button as="a" className="text-base px-3 py-1.5" href="/resume">Résumé</Button>
+					<Button as={Link} className="text-base px-3 py-1.5" href="https://github.com/toshgoodson/resume/releases/latest/download/Toshiro_Goodson_resume.pdf" download="false" type="application/pdf">Résumé</Button>
 				</div>
 			</div>
 			<div className="h-4 bg-gradient-to-b from-black/20 to-transparent sticky top-16 z-30"></div>

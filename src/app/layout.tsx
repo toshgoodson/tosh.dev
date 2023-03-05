@@ -42,7 +42,7 @@ const notoEmoji = localFont({
 
 export default function RootLayout({children}: PropsWithChildren) {
 	return (
-		<html lang="en" className={`${dungeonChunk.variable} ${robotoMono.variable} ${inter.variable} ${notoEmoji.variable}`}>
+		<html lang="en" className={`${dungeonChunk.variable} ${robotoMono.variable} ${inter.variable} ${notoEmoji.variable} scroll-smooth`}>
 			<head />
 			<body className="bg-stone-900 text-stone-400 rfs:text-xl overflow-auto">
 				<Nav/>

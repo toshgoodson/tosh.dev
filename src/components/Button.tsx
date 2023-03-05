@@ -1,10 +1,11 @@
 import { PolymorphicComponentPropsWithRef, PolymorphicRef } from "@/interfaces/PolymorphicComponent"
 import React from "react"
+import { Link } from "./Link"
 
 const classes = `
 	inline-block px-4 py-2
 	font-mono font-light text-amber-300
-	border border-amber-300 rounded
+	border !border-amber-300 rounded
 	bg-amber-300/0
 	hover:bg-amber-300/10
 	transition-colors duration-300 ease-[cubic-bezier(0.25,-0.75,0.75,1.75)]
@@ -13,7 +14,7 @@ const classes = `
 
 type Props = {} // Button takes no additional props (just the underlying html element's props)
 
-type AllowedElementTypes = 'a' | 'button'
+type AllowedElementTypes = 'a' | 'button' | typeof Link
 
 type ButtonProps<C extends React.ElementType> = PolymorphicComponentPropsWithRef<C, Props>
 
