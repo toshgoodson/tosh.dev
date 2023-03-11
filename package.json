@@ -4,10 +4,14 @@
   "private": true,
   "license": "AGPLv3",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p ${PORT:-6464}",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p ${PORT:-6464}",
+    "lint": "next lint",
+    "export": "next export -o docs/",
+    "clean": "rm -rf .next docs",
+    "isNotDirty": "sh -c '[[ -z $(git status -s) ]]'",
+    "release": "yarn install && yarn isNotDirty && yarn clean && yarn build && yarn export"
   },
   "dependencies": {
     "@next/font": "13.2.3",
