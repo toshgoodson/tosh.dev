@@ -89,7 +89,7 @@ export default function Home() {
 				<SectionHeader id="contact" center>Contact</SectionHeader>
 				<div className="grid grid-cols-12">
 					<div className="col-span-12 md:col-span-8 md:col-start-3">
-						<p className="text-center mb-6">I’m currently looking for new opportunities!</p>
+						<p className="text-center mb-6">I&apos;m currently looking for new opportunities!</p>
 						<p className="text-center mb-6">If you have a senior/lead full stack, front end, or back end position, throw it my way! I&apos;m down to chat about it.</p>
 						<div className="text-center">
 							<Button as={Link} href="mailto:tosh.goodson@gmail.com" target="_blank">Say Hello</Button>
