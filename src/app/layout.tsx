@@ -1,7 +1,7 @@
 import './globals.css'
 import { PropsWithChildren } from 'react'
 import { Nav } from '@/components/Nav'
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 
 const dungeonChunk = localFont({
 	src: '../fonts/DungeonChunk.woff2',
