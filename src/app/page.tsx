@@ -80,7 +80,7 @@ export default function Home() {
 					</div>
 					<div className="col-span-8">
 						<p className="mb-6">Take a look at my résumé for my job history.</p>
-						<Button as={Link} href="">View Résumé</Button>
+						<Button as={Link} href="/toshiro-goodson-resume-v1.1.2.pdf" target="_blank">View Résumé</Button>
 					</div>
 				</div>
 			</div>
