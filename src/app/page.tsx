@@ -38,10 +38,17 @@ export default function Home() {
 				</div>
 				<div className="col-span-full md:col-span-8">
 					<p className="mb-6">Hi there! My name is Toshiro, but you can call me Tosh. I specialize in building web applications from start to finish, and I&apos;m passionate about creating solutions that are both user-friendly and technically robust. </p>
-				
-					<p className="mb-6">Blah Blah</p>
-				
-					<p className="mb-6">Foob</p>
+
+					<p className="mb-6">Here are some technologies I&apos;m currently working with:</p>
+
+					<ul className="mb-6 font-mono text-base grid grid-cols-2 gap-1 marker:text-lime-400 marker:font-bold list-inside list-['›_']">
+						<li>Node.js</li>
+						<li>MongoDB</li>
+						<li>TypeScript</li>
+						<li>React</li>
+						<li>Next.js</li>
+						<li>Tailwind CSS</li>
+					</ul>
 				</div>
 				<div className="col-span-full md:col-span-4">
 					<div className="max-w-xs md:max-w-none relative m-auto">
@@ -77,10 +84,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-
-			{/* <div className="mb-52">
-				<SectionHeader id="projects">Projects</SectionHeader>
-			</div> */}
 
 			<div className="mb-52">
 				<SectionHeader id="contact" center>Contact</SectionHeader>

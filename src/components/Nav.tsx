@@ -36,7 +36,6 @@ export const Nav: FC = () => {
 					<div className="hidden md:block mr-3">
 						<NavLink href="#about">About</NavLink>
 						<NavLink href="#experience">Experience</NavLink>
-						{/* <NavLink href="#projects">Projects</NavLink> */}
 						<NavLink href="#contact">Contact</NavLink>
 					</div>
 
