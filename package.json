@@ -35,5 +35,10 @@
   "packageManager": "yarn@3.4.1",
   "volta": {
     "node": "18.14.0"
+  },
+  "dependenciesMeta": {
+    "next@13.2.3": {
+      "unplugged": true
+    }
   }
 }

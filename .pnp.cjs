@@ -8787,14 +8787,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],\
       ["next", [\
         ["npm:13.2.3", {\
-          "packageLocation": "./.yarn/cache/next-npm-13.2.3-5bd86c8056-5147078ceb.zip/node_modules/next/",\
+          "packageLocation": "./.yarn/unplugged/next-virtual-782d83365a/node_modules/next/",\
           "packageDependencies": [\
             ["next", "npm:13.2.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
         ["virtual:3bbd8ef9bb5a00ebfa72935d356d42c200f45ac1022c0a6676c1801138d38448403171ba0afcc539ed2e80e0f10ca86235f25f4b5766300069356f34bbeb9b75#npm:13.2.3", {\
-          "packageLocation": "./.yarn/__virtual__/next-virtual-782d83365a/0/cache/next-npm-13.2.3-5bd86c8056-5147078ceb.zip/node_modules/next/",\
+          "packageLocation": "./.yarn/unplugged/next-virtual-782d83365a/node_modules/next/",\
           "packageDependencies": [\
             ["next", "virtual:3bbd8ef9bb5a00ebfa72935d356d42c200f45ac1022c0a6676c1801138d38448403171ba0afcc539ed2e80e0f10ca86235f25f4b5766300069356f34bbeb9b75#npm:13.2.3"],\
             ["@next/env", "npm:13.2.3"],\
