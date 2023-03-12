@@ -43,7 +43,9 @@ const notoEmoji = localFont({
 export default function RootLayout({children}: PropsWithChildren<{}>) {
 	return (
 		<html lang="en" className={`${dungeonChunk.variable} ${robotoMono.variable} ${inter.variable} ${notoEmoji.variable} scroll-smooth`}>
-			<head />
+			<head>
+				<script type="text/javascript"> </script> {/* Fix CSS transitions happening on page load https://bugs.chromium.org/p/chromium/issues/detail?id=332189 */}
+			</head>
 			<body className="bg-stone-900 text-stone-400 rfs:text-xl overflow-auto">
 				<Nav/>
 				<div className="container mx-auto max-w-4xl px-4">

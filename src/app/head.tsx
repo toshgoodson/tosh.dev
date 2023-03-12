@@ -11,7 +11,6 @@ export default function Head() {
 			<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 			<link rel="manifest" href="/manifest.webmanifest" />
 			<meta key="themeColor" name="theme-color" content={colors.amber[400]} />
-			<script type="text/javascript"> </script> {/* Fix CSS transitions happening on page load https://bugs.chromium.org/p/chromium/issues/detail?id=332189 */}
 		</>
 	)
 }
