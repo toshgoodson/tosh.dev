@@ -45,6 +45,3 @@ next-env.d.ts
 # vscode
 /.vscode/extensions.json
 /.vscode/settings.json
-
-# ignore docs on master (but not on live!)
-/docs
