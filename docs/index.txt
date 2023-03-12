@@ -1,5 +1,5 @@
 0:[[["",{"children":["",{}]},null,null,true],"$L1",["$L2",[["$","title",null,{"children":"Tosh Goodson - tosh.dev"}],["$","meta",null,{"content":"width=device-width, initial-scale=1","name":"viewport"}],["$","meta",null,{"name":"description","content":"Tosh Goodson is a full stack software engineer focused on building robust and performant web apps. Currently accepting job offers!"}],["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"icon","href":"/icon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","link",null,{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","themeColor",{"name":"theme-color","content":"#fbbf24"}]]]]]
-3:I{"id":"7472","chunks":["472:472-fab91b763eb736d7","185:app/layout-394fe39c4527934e"],"name":"","async":false}
+3:I{"id":"7472","chunks":["472:472-fab91b763eb736d7","931:app/page-64c2752c0cae0a01"],"name":"","async":false}
 4:I{"id":"672","chunks":["272:webpack-6b30b0abd83c42ae"],"name":"","async":false}
 5:I{"id":"1924","chunks":["272:webpack-6b30b0abd83c42ae"],"name":"","async":false}
 6:I{"id":"2300","chunks":["472:472-fab91b763eb736d7","931:app/page-64c2752c0cae0a01"],"name":"","async":false}
