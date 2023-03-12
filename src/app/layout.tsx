@@ -40,7 +40,7 @@ const notoEmoji = localFont({
 })
 
 
-export default function RootLayout({children}: PropsWithChildren) {
+export default function RootLayout({children}: PropsWithChildren<{}>) {
 	return (
 		<html lang="en" className={`${dungeonChunk.variable} ${robotoMono.variable} ${inter.variable} ${notoEmoji.variable} scroll-smooth`}>
 			<head />
