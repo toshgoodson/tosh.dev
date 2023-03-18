@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[19],{19:function(e){e.exports={style:{fontFamily:"'__dungeonChunk_09f3f3'",fontWeight:400,fontStyle:"normal"},className:"__className_09f3f3",variable:"__variable_09f3f3"}}}]);

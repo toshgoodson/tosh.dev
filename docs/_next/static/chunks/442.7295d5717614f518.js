@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[442],{442:function(a){a.exports={style:{fontFamily:"'__inter_afacdb'"},className:"__className_afacdb",variable:"__variable_afacdb"}}}]);
