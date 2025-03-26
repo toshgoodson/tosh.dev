@@ -1,0 +1,1 @@
+export const RESUME_URL = 'https://github.com/toshgoodson/resume/releases/latest/download/Toshiro_Goodson_resume.pdf'
