@@ -1,4 +1,3 @@
-import { RESUME_URL } from "@/env"
 import Link from "next/link"
 import { FC, PropsWithChildren } from "react"
 import { Button } from "./Button"
@@ -40,7 +39,7 @@ export const Nav: FC = () => {
 						<NavLink href="#contact">Contact</NavLink>
 					</div>
 
-					<Button as={Link} className="text-base px-3 py-1.5" href={RESUME_URL} target="_blank">Résumé</Button>
+					<Button as={Link} className="text-base px-3 py-1.5" href="/resume" target="_blank">Résumé</Button>
 					<Button as="label" htmlFor="sidebar-toggle" className="!text-stone-200 !bg-transparent !px-1 !py-0 border-0 font-mono text-4xl ml-4 md:hidden">≡</Button>
 				</div>
 				<div className="top-0 group-peer-checked:top-16 z-[49] opacity-0 group-peer-checked:opacity-100 transition-all">
