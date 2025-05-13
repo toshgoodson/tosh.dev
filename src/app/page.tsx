@@ -1,6 +1,5 @@
 import { Button } from '@/components/Button'
 import { Link } from '@/components/Link'
-import { RESUME_URL } from '@/env'
 import Image from 'next/image'
 import { FC, PropsWithChildren } from 'react'
 
@@ -81,7 +80,7 @@ export default function Home() {
 					</div>
 					<div className="col-span-8">
 						<p className="mb-6">Take a look at my résumé for my job history.</p>
-						<Button as={Link} href={RESUME_URL} target="_blank">View Résumé</Button>
+						<Button as={Link} href="/resume" target="_blank">View Résumé</Button>
 					</div>
 				</div>
 			</div>
